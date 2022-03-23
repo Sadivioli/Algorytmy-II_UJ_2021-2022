@@ -2,20 +2,23 @@
 
 using namespace std;
 
-setSimple::setSimple(){
-    for(int i = 0; i < N; i++){
+setSimple::setSimple(int N){
+    size = N;
+    array = new bool[size];
+    for(int i = 0; i < size; i++){
         array[i] = 0;
     }
+    
 }
 bool setSimple::validIndex(int x){
-    if(x < 0 || x > N){
+    if(x < 0 || x > this->size){
         return false;
     } else {
         return true;
     }
 }
 bool setSimple::isEmpty() const{
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < size; i++){
         if(array[i] == 1){
             return false;
         }
@@ -23,27 +26,36 @@ bool setSimple::isEmpty() const{
     return true;
 }
 bool setSimple::isFull() const{
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < size; i++){
         if(array[i] == 0){
             return false;
         }
     }
     return true;
 }
-bool setSimple::insert(int x){
+int setSimple::insert(int x){
+    int counter = 0;
     if(validIndex(x)){
-        array[x] = 1;
-        return true;
-    } else {
-        return false;
+        if(array[x] == 0){
+            array[x] = 1;
+            counter++;
+        }
+        //cout << "Stan countera " << counter << endl;
+        return counter;
+
     }
+    return counter;
 }
-bool setSimple::remove(int x){
+int setSimple::remove(int x){
+    int counter = 0;
     if(validIndex(x)){
-        array[x] = 0;
-        return true;
+        if(array[x] == 1){
+            array[x] = 0;
+            counter++;
+        }
+        return counter;
     } else {
-        return false;
+        return counter;
     }
 }
 bool setSimple::contains(int x){
@@ -53,9 +65,9 @@ bool setSimple::contains(int x){
         return false;
     }
 }
-bool setSimple::numOfElements(){
+int setSimple::numOfElements(){
     int counter = 0;
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < size; i++){
         if(array[i] == 1){
             counter++;
         }
@@ -63,8 +75,8 @@ bool setSimple::numOfElements(){
     return counter;
 }
 setSimple setSimple::operator+(const setSimple& x){
-    setSimple result;
-    for(int i = 0; i < N; i++){
+    setSimple result = setSimple(size);
+    for(int i = 0; i < size; i++){
         if(array[i] == 1 || x.array[i] == 1){
             result.array[i] = 1;
         }
@@ -73,8 +85,8 @@ setSimple setSimple::operator+(const setSimple& x){
     
 }
 setSimple setSimple::operator*(const setSimple& x){
-    setSimple result;
-    for(int i = 0; i < N; i++){
+    setSimple result = setSimple(size);
+    for(int i = 0; i < size; i++){
         if(array[i] == 1 && x.array[i] == 1){
             result.array[i] = 1;
         }
@@ -82,8 +94,8 @@ setSimple setSimple::operator*(const setSimple& x){
     return result;
 }
 setSimple setSimple::operator-(const setSimple& x){
-    setSimple result;
-    for(int i = 0; i < N; i++){
+    setSimple result = setSimple(size);
+    for(int i = 0; i < size; i++){
         if(array[i] == 1 && x.array[i] == 0){
             result.array[i] = 1;
         }
@@ -91,7 +103,7 @@ setSimple setSimple::operator-(const setSimple& x){
     return result;
 }
 bool setSimple::operator==(const setSimple& x){
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < size; i++){
         if(array[i] != x.array[i]){
             return false;
         }
@@ -99,7 +111,7 @@ bool setSimple::operator==(const setSimple& x){
     return true;
 }
 void setSimple::print(){
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < size; i++){
         cout << array[i] << " ";
     }
     cout << endl;
