@@ -1,7 +1,7 @@
 #include "set.h"
 using namespace std;
 
-int MAX_ITERATIONS = 20;
+int MAX_ITERATIONS = 50;
 int dataSize = 100;
 
 int main(){
