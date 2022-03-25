@@ -1,5 +1,7 @@
 Punkt C:
+<br />
 &emsp;Korzystając z wyników zadań A oraz B proszę się zastanowić która implementacja jest lepsza i w jakiej sytuacji. Swoją odpowiedź proszę przesłać za pośrednictwem e-mail.
+<br />
 &emsp;Uwaga: to zadanie może być zaliczone pod warunkiem prawidłowego wykonania A oraz B.
 
 
