@@ -1,6 +1,6 @@
 Punkt C:
-    Korzystając z wyników zadań A oraz B proszę się zastanowić która implementacja jest lepsza i w jakiej sytuacji. Swoją odpowiedź proszę przesłać za pośrednictwem e-mail. 
-    Uwaga: to zadanie może być zaliczone pod warunkiem prawidłowego wykonania A oraz B.
+&emsp;Korzystając z wyników zadań A oraz B proszę się zastanowić która implementacja jest lepsza i w jakiej sytuacji. Swoją odpowiedź proszę przesłać za pośrednictwem e-mail.
+&emsp;Uwaga: to zadanie może być zaliczone pod warunkiem prawidłowego wykonania A oraz B.
 
 
 UWAGI:
@@ -19,5 +19,4 @@ UWAGI:
 
 &emsp;4.Sprawdzenie złożoności obliczeniowej dla każdej z operacji może być trochę pracochłonne. Kryteria zaliczenia zadań są złagodzone: wystarczy jeden wykres dla wybranej operacji. Ale proszę go jednak zrobić porządnie 
 
-&emsp;5.W większości zadań nie jest określony typ danych elementów zbioru. Można korzystać na przykład z liczb całkowitych. Nie powinno mieć to większego znaczenia jeżeli pewne warunki są spełnione. Jakie to warunki?
-&emsp;Wskazówka: ==, <, >
+&emsp;5.W większości zadań nie jest określony typ danych elementów zbioru. Można korzystać na przykład z liczb całkowitych. Nie powinno mieć to większego znaczenia jeżeli pewne warunki są spełnione. Jakie to warunki?&nbsp;&emsp;Wskazówka: ==, <, >
