@@ -20,4 +20,4 @@ UWAGI:
    4.Sprawdzenie złożoności obliczeniowej dla każdej z operacji może być trochę pracochłonne. Kryteria zaliczenia zadań są złagodzone: wystarczy jeden wykres dla wybranej operacji. Ale proszę go jednak zrobić porządnie 
 
    5.W większości zadań nie jest określony typ danych elementów zbioru. Można korzystać na przykład z liczb całkowitych. Nie powinno mieć to większego znaczenia jeżeli pewne warunki są spełnione. Jakie to warunki?
-    Wskazówka: ==, <, >
+   Wskazówka: ==, <, >
