@@ -4,7 +4,8 @@ Punkt C:
 
 
 UWAGI:
-    1. Dla każdej implementacji typu danych oraz dla każdej zaimplementowanej operacji proszę dodatkowo:
+
+   1. Dla każdej implementacji typu danych oraz dla każdej zaimplementowanej operacji proszę dodatkowo:
         - zamieścić w Państwa programie test sprawdzający czy operacje są zaimplementowane prawidłowo
         - aby ułatwic Państwu pracę możemy się umówić, że w teście będzie sprawdzana niewielka ilość przypadków - na tyle mała aby można było je wypisać na ekranie komputera i przeanalizować ręcznie
 
