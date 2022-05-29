@@ -1,0 +1,7 @@
+set title "SetSimple insert operationnn"
+set xlabel "n"
+set ylabel "czas wykonania"
+set yr [-0.000002:0.000002]
+plot "ins.txt"
+pause -1 "Hit any key to continue."
+
