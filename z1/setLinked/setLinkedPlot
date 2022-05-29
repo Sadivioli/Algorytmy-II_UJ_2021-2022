@@ -1,0 +1,8 @@
+set title "SetLinked insert operation"
+set xlabel "n"
+set ylabel "t"
+t(n) = b * n + c 
+fit t(x) "ins.txt" using 1:2 via b , c
+plot "ins.txt" using 1:2 , t(x) lw 2
+pause -1 "Hit any key to continue."
+
