@@ -9,8 +9,6 @@ int main(){
 
     int iteration = 0;
 
-    printf("Rozmiar, Dodawanie, Usuwanie, Zawieranie\n");
-
     while(iteration++ < MAX_ITERATIONS){
 
         setSimple A(dataSize);
