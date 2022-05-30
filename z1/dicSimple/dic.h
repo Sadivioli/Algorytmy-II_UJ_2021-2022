@@ -14,7 +14,7 @@
 
 using namespace std;
 
-static const int MAX_SIZE = 100;
+static const int MAX_SIZE = 1000;
 
 class Dictionary{
     public:
