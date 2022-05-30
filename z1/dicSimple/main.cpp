@@ -75,23 +75,40 @@ int main(){
 
     //calculating the time it takes to insert and remove a string with a sample of 1000 tries
     //times of insertion and removal are printed to the files ins.txt and rm.txt
+    //for testing purposes new dictionaries are created and inserted and removed 1000 times
 
-    for(int i = 0; i < 1000; i++){
-        string randomString = gen_random(50);
+    for(int i = 10; i < 1000; i++){
+        
+        Dictionary insertDic;
 
-        auto start = chrono::high_resolution_clock::now();
-        dictionaryA.insert(randomString);
-        auto stop = chrono::high_resolution_clock::now();
+        for (int j = 0; j < i - 1; j++) {
+			insertDic.insert(gen_random(50));
+		}
 
-        auto duration = chrono::duration_cast<chrono::microseconds>(stop - start);
-        insert << i << " " << duration.count() << endl;
+        auto insertStart = std::chrono::system_clock::now();
+        insertDic.insert(gen_random(50));
+        auto insertEnd = std::chrono::system_clock::now();
 
-        start = chrono::high_resolution_clock::now();
-        dictionaryA.remove(randomString);
-        stop = chrono::high_resolution_clock::now();
+        chrono::duration<double> insertTime = insertEnd - insertStart;
+        insert << i << " " << insertTime.count() << endl;
 
-        duration = chrono::duration_cast<chrono::microseconds>(stop - start);
-        remove << i << " " << duration.count() << endl;
+    }
+
+    for(int i = 10; i < 1000; i++){
+
+    Dictionary removeDic;
+
+    for (int j = 0; j < i - 1; j++) {
+        removeDic.insert(gen_random(50));
+    }
+
+    auto removeStart = std::chrono::system_clock::now();
+    removeDic.remove(gen_random(50));
+    auto removeEnd = std::chrono::system_clock::now();
+
+    chrono::duration<double> removeTime = removeEnd - removeStart;
+    remove << i << " " << removeTime.count() << endl;
+
     }
     return 0;
 }
