@@ -2,6 +2,10 @@ Punkt C:
     Korzystając z wyników zadań A oraz B proszę się zastanowić która implementacja jest lepsza i w jakiej sytuacji. Swoją odpowiedź proszę przesłać za pośrednictwem e-mail. 
     Uwaga: to zadanie może być zaliczone pod warunkiem prawidłowego wykonania A oraz B.
 
+    Przechowywanie danych w tablicy (SetSimple), dobrze sprawdza się w stosunkowo małych lub gęstych zbiorach. Złożoność obliczeniowa jest bardzo mała, dlatego że wszystkie podstawowe operacje są rzędu O(1), kosztem i największą wadą jest ilość zajmowanej pamięci. Wielkość zbioru musi być z góry znana.
+
+    Lista wiązana (SetLinked) sprawdza się najlepiej, kiedy chcemy oszczędzać pamięć. Struktura bez względu na postać zbioru jest gęsto upakowana. Niestety kosztem niskiego zużycia pamięci jest większa złożoność obliczeniowa. Wielkość zbioru nie musi być z góry określona.
+
 
 UWAGI:
     1. Dla każdej implementacji typu danych oraz dla każdej zaimplementowanej operacji proszę dodatkowo:

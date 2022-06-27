@@ -1,5 +1,6 @@
 #ifndef SET_H
 #define SET_H
+#pragma once
 #include "list/linkedlist.h"
 //Implementacja używa posortowanej linked listy typu int
 class setLinked{
