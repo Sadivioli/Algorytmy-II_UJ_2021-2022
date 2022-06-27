@@ -16,16 +16,6 @@ Państwa implementację proszę wykorzystać w programie, który bada złożono�
 Instrukcja uruchomienia programu:
     make run
 
-Gnuplot commands:
- (Zakładamy że jesteśmy w tym samym folderze, w którym znakdują się pliki "ins.txt", "rm.txt")
-
- f(x) = x**2 
- set yrange [0:f(2)]
- set ytics ("0" f(0), "1" f(1)) 
- set xrange [0:490000] 
-
- plot "ins.txt" title "Number of operations"
- plot "ins.txt" title "Number of operations"
 
 Podejście do zagadnienia obliczania złożoniści obliczeniowej opracji na zbiorach.
     W funcjach insert oraz remove tworzona jest zmienna counter, która reprezentuje ilość wykonanych operacji. Dodaje +1 do zmiennej counter kiedy element zostaje dodany/usnięty ze zbioru. Funkcje insert i remove zwracają tę wartość, która wraz z rozmiarem zbioru w danej iteracji zostaje zapisana do plików odpowidnio "ins.txt" i "rm.txt". Na podstawie tych plików możemy zobaczyć złożoność czasową tych operacji. Złożoność wynosi O(n), co odpowiada wartości teoretycznej.
