@@ -1,8 +1,2 @@
 # Algorytmy II
-
-
-Remote desktop:
-
-wsl --shutdown
-
-/etc/init.d/xrdp start
+Repozytorium z zadaniami z przedmiotu Algorytmy i zestawy danych.
